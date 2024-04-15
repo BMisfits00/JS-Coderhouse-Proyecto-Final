@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gestion de Gastos</title>
+</head>
+<body>
+    
+    
+    <h1>Sistema de Gestion de Gastos</h1>
+    <h4>Ingrese su gasto</h4>
+     
+
+    <section>
+        <form action="">
+            <label for="gasto">Categoria</label>
+            <select name="categoria" onchange="habilitar()" id="categoria">
+                <option value="0">Seleccionar..</option>
+                <option value="1">Alimentos</option>
+                <option value="2">Servicios</option>
+                <option value="3">Educacion</option>
+                <option value="4">Salidas</option>
+                <option value="5">Varios</option>
+            </select>
+
+            <div id="divInvisible">
+                <label for="gasto">Gasto</label>
+                <br>
+                <input type="text" id="gasto">
+                <br>
+                <label for="monto">Monto</label>
+                <br>
+                <input type="number" id="monto">
+            </div>
+            <input type="submit" value="Añadir Gasto">
+            <div class="botones-consulta">
+                <input type="button" class="boton-info" value="Total de gastos">
+                <input type="button" class="boton-info" value="Mostrar listado de gastos">
+            </div>
+        </form>
+    </section>
+
+    <div class="listado">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
