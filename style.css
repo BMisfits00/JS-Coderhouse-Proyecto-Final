@@ -128,7 +128,11 @@ input[type='submit']:hover {
     justify-content: space-evenly;
 }
 
-.boton-info {
+#submit {
+    margin-left: 30%;
+}
+
+.boton {
     width: 40%;
     background-color: var(--bg-color);
     color: var(--color3);
@@ -138,7 +142,7 @@ input[type='submit']:hover {
     transition:0.5s background-color ;
 }
 
-.boton-info:hover {
+.boton:hover {
     background-color: var(--color4);
     cursor: pointer;
 }

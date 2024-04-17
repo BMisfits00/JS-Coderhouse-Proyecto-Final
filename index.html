@@ -11,11 +11,16 @@
     
     
     <h1>Sistema de Gestion de Gastos</h1>
-    <h4>Ingrese su gasto</h4>
+    <h4>GastApp</h4>
      
 
     <section>
+
         <form action="">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario">
+            <br>
+
             <label for="gasto">Categoria</label>
             <select name="categoria" onchange="habilitar()" id="categoria">
                 <option value="0">Seleccionar..</option>
@@ -35,10 +40,12 @@
                 <br>
                 <input type="number" id="monto">
             </div>
-            <input type="submit" value="Añadir Gasto">
-            <div class="botones-consulta">
-                <input type="button" class="boton-info" value="Total de gastos">
-                <input type="button" class="boton-info" value="Mostrar listado de gastos">
+            <div class="botones">
+                <input type="submit" class="boton" id="submit" value="Añadir Gasto">
+                <div class="botones-consulta">
+                    <input type="button" class="boton" value="Total de gastos">
+                    <input type="button" class="boton" value="Mostrar listado de gastos">
+                </div>
             </div>
         </form>
     </section>
