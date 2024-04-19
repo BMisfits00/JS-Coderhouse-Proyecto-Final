@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>GastApp</title>
+</head>
+<body>
+    
+    
+    <h1>Sistema de Gestion de Gastos</h1>
+    <h4>GastApp</h4>
+     
+
+    <section>
+        <form id="formularioLogin">
+            <label for="gasto">Usuario</label>
+            <input type="text" id="nombre">
+        
+            <label for="monto">Contraseña</label>
+            <input type="password" id="pass">
+        
+            <input type="submit" id="ingresar" value="Ingresar">
+            <input type="button" class="boton" id="crearUsuario" value="Crear Usuario">
+        </form>
+
+        <p id="usuarioActivo" style="display: none;"></p>
+
+        <form id="formularioGastos" style="display: none;">
+            <label for="gasto">Categoria</label>
+            <select name="categoria" onchange="habilitar()" id="categoria">
+                <option value="0">Seleccionar..</option>
+                <option value="1">Alimentos</option>
+                <option value="2">Servicios</option>
+                <option value="3">Educacion</option>
+                <option value="4">Salidas</option>
+                <option value="5">Varios</option>
+            </select>
+
+            <div id="divInvisible">
+                <label for="gasto">Gasto</label>
+                <br>
+                <input type="text" id="gasto">
+                <br>
+                <label for="monto">Monto</label>
+                <br>
+                <input type="number" id="monto">
+            </div>
+            <div class="botones">
+                <input type="submit" class="boton" id="aniadir" value="Añadir Gasto">
+                <input type="button" class="boton" value="Total de gastos">
+                <!-- <div class="botones-consulta">
+                    <input type="button" class="boton" value="Mostrar listado de gastos">
+                </div> -->
+                <input type="button" class="boton" id="cerrarSesion" value="Cerrar Sesion">
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/JS-Coderhouse-Proyecto-Final/Version con login/scripts/mes.js"></script>
+    <script src="/JS-Coderhouse-Proyecto-Final/Version con login/scripts/usuario.js"></script>
+    <script src="/JS-Coderhouse-Proyecto-Final/Version con login/scripts/sistema.js"></script>
+    <script type="module" src="/JS-Coderhouse-Proyecto-Final/Version con login/scripts/main.js"></script>
+</body>
+</html>
