@@ -90,13 +90,19 @@ document.getElementById('cerrarSesion').onclick = () => {
       });
 }
 
-
-function habilitar(){
+document.querySelector('#categoria').addEventListener('change', () => {
     var valor = document.getElementById('categoria').value
     valor > 0 ? 
     document.getElementById('divInvisible').style.display="block" :
-    document.getElementById('divInvisible').style.display="none"
-}
+    document.getElementById('divInvisible').style.display="none"    
+})
+
+// function habilitar(){
+//     var valor = document.getElementById('categoria').value
+//     valor > 0 ? 
+//     document.getElementById('divInvisible').style.display="block" :
+//     document.getElementById('divInvisible').style.display="none"
+// }
 
 function usuarioValido(nombre, pass){
     let valido = true;
