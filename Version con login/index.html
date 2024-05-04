@@ -30,7 +30,7 @@
 
         <form id="formularioGastos" style="display: none;">
             <label for="gasto">Categoria</label>
-            <select name="categoria" onchange="habilitar()" id="categoria">
+            <select name="categoria" id="categoria">
                 <option value="0">Seleccionar..</option>
                 <option value="1">Alimentos</option>
                 <option value="2">Servicios</option>
@@ -39,15 +39,14 @@
                 <option value="5">Varios</option>
             </select>
 
-            <div id="divInvisible">
-                <label for="gasto">Gasto</label>
-                <br>
-                <input type="text" id="gasto">
-                <br>
-                <label for="monto">Monto</label>
-                <br>
-                <input type="number" id="monto">
-            </div>
+            <label for="gasto">Gasto</label>
+            <br>
+            <input type="text" id="gasto">
+            <br>
+            <label for="monto">Monto</label>
+            <br>
+            <input type="number" id="monto">
+            
             <div class="botones">
                 <input type="submit" class="boton" id="aniadir" value="Añadir Gasto">
                 <input type="button" class="boton" value="Total de gastos">
